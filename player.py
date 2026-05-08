@@ -1,12 +1,7 @@
-import pygame
+import pygame, dice, rules, player, scorecard, os, game, sys, random
 
 class Player:
-    def __init__(self):
-        points = {
-            "Einser" : 0,
-            "Zweier" : 0,
-            "Dreier" : 0,
-            "Vierer" : 0,
-            "Fuenfer" : 0,
-            }
-        pass
+    def __init__(self, name):
+        self.name=name
+        self.rolls=3
+        self.card=scorecard.ScoreCard()
